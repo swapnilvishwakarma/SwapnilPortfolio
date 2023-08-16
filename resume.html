@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Resume Extraction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+				<nav>
+					<ul>
+						<li><a href="index.html#one">Projects</a></li>
+						<li><a href="index.html#two">Blogs</a></li>
+						<li><a href="index.html#three">Get in touch</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Resume Extraction</h1>
+							<span class="image fit"><img src="images/resume2.jpg" alt="" /></span>
+							<p><br>A transformative project designed to streamline the arduous process of evaluating job application resumes using the power of Natural Language Processing (NLP). In today's job market, sifting through countless resumes poses a significant challenge for HR professionals. This project offers an innovative solution that automates the extraction of relevant information from a diverse range of resumes, greatly simplifying the recruitment process.
+
+								<br><br><b>1. Problem and Business Context:</b>
+								<br>Recruiting is a complex process that often involves assessing numerous resumes. HR departments often find themselves inundated with countless applications, leading to inefficiencies in resume review. This project aims to address this challenge by creating an automated system capable of extracting key information from resumes, enabling HR teams to focus on higher-value tasks.
+								
+								<br><br><b>2. Project Lifecycle:</b>
+								<br>The project's life cycle can be categorized into several stages:
+								
+								<br>1. Data Understanding and Exploration
+								<br>2. Data Cleaning and Transformation
+								<br>3. Exploratory Data Analysis (EDA) and Visualization
+								<br>4. Model Selection and Construction
+								<br>5. Model Deployment and Final Presentation
+								
+								<br><br><b>3. Data Understanding and Exploration:</b>
+								<br>The dataset, structured in JSON format, consists of two primary columns: 'content' (resume text) and 'annotation' (labeled information). This data represents resumes of 200 individuals, with labeled categories including name, location, contact information, education, experience, skills, and more.
+								
+								<br><br><b>4. Data Cleaning Techniques:</b>
+								<br>To prepare the data for analysis, a series of text preprocessing techniques were employed. These included converting text to lowercase, expanding contractions, removing unnecessary characters and stop words, tokenization, and lemmatization. Additionally, TF-IDF (Term Frequency - Inverse Document Frequency) featurization was used to transform the text data into a numerical format suitable for modeling.
+								
+								<br><br><b>5. Exploratory Data Analysis (EDA):</b>
+								<br>EDA unveiled valuable insights from the data. Techniques such as duplication detection, contractions mapping, stop-word removal, and average word length calculation contributed to data enhancement. Word count distribution and n-gram analysis revealed insights into the vocabulary and phrasing of resumes. Word clouds visually represented word frequency, uncovering significant terms such as companies, skills, and areas of expertise.
+								
+								<br><br><b>6. Model Building and NER Training:</b>
+								<br>Named Entity Recognition (NER) models were trained using SpaCy to extract specific information from resumes. SpaCy's prediction-based approach allowed the model to learn from training examples, improving accuracy through iterative feedback. The model was tested on various resume formats and stored the extracted information for each resume.
+								
+								<br><br><b>7. Model Deployment and Challenges:</b>
+								<br>The project's primary objective was to develop a deployable application that could accommodate various file formats such as .pdf and .docx. While successful progress was made on this front, full deployment was hindered by certain challenges, including model import issues. However, the model's functionality remains operational within the project notebook, and samples can be tested.
+								
+								<br><br><b>8. Limitations and Future Directions:</b>
+								<br>While the project showcased promising results, limitations emerged, including inaccuracies in predictions and information extraction due to the varied nature of resumes and the limited dataset. Overcoming these limitations would involve a more extensive, diverse dataset and refining the model's approach to capturing nuanced information.
+
+								<p><a href="https://github.com/swapnilvishwakarma/resume_extraction_team_zeros" target="_blank">Github Link</a></p>
+								
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="https://www.linkedin.com/in/swapnil-vishwakarma/">LinkedIn</a></li>
+						<li><a href="https://github.com/swapnilvishwakarma">Github</a></li>
+						<li><a href="https://www.analyticsvidhya.com/blog/author/swapnil-vishwakarma/">Analytics Vidhya</a></li>
+						<li><a href="https://auth.geeksforgeeks.org/user/swapnilvishwakarma7/articles?utm_source=geeksforgeeks&utm_medium=article_author&utm_campaign=auth_user">Geeks for Geeks</a></li>
+						<li><a href="https://medium.com/@swapnil-vishwakarma">Medium</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Car Price Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+				<nav>
+					<ul>
+						<li><a href="index.html#one">Projects</a></li>
+						<li><a href="index.html#two">Blogs</a></li>
+						<li><a href="index.html#three">Get in touch</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Car Price Prediction</h1>
+							<span class="image fit"><img src="images/car2.jpg" alt="" /></span>
+							<p>A  Flask-based Machine Learning web application designed to accurately predict the resale price of used cars based on a multitude of defining characteristics. This innovative web app caters to both sellers and buyers, providing them with a reliable estimate of a car's value prior to any transaction. Hosted on the Heroku Cloud Platform, this user-friendly application requires input information such as the purchase year, ex-showroom price, mileage, and more.
+
+								<br><br><b>Project Overview:</b>
+								<br>Commencing this project, I initiated by conducting a comprehensive analysis of the dataset. This involved determining the dataset's dimensions, identifying unique values within specific columns, and addressing missing data points. Notably, I engineered a new feature named "No of Years" by computing the difference between the current year and the year of purchase. Consequently, the original "Year" column was deemed superfluous and was subsequently dropped.
+								
+								<br>To handle categorical variables, I employed the pandas library to transform these variables into numerical vectors using the get_dummies() function. To ensure optimal model performance, I partitioned the dataset into training and testing subsets, adopting an 80:20 ratio. Given the regression nature of the problem, I employed the RandomForestRegressor model for training. To fine-tune hyperparameters and identify the most optimal model, I harnessed the power of RandomizedSearchCV.
+								
+								<br><br><b>Model Evaluation:</b>
+								<br>To quantify the efficacy of the model, I employed several key metrics including Mean Absolute Error, Mean Squared Error, and Root Mean Squared Error. These metrics enabled a comprehensive assessment of the model's predictive accuracy and generalization capabilities.
+								
+								<br><br><b>Serialization and Deployment:</b>
+								<br>To seamlessly integrate the trained model into the Flask web app, I serialized it using the pickle library. This streamlined the model's utilization within the application, enabling efficient and accurate predictions. Users input new data values via the application's form, which are subsequently utilized by the model to generate predictions. These predictions are then presented to the user in an easily comprehensible format.
+								
+								<br><br><b>Learning and Challenges:</b>
+								<br>This project presented an excellent opportunity for me to delve into the realm of Flask-based development. While it initially posed challenges, my commitment to learning proved invaluable. I diligently studied tutorials and conducted thorough research, enabling me to successfully build this web app. The experience bolstered my proficiency in web development and machine learning integration.
+								
+								<br><br><b>Room for Improvement:</b>
+								<br>One notable aspect of improvement lies in the calculation of the number of years. Although the current implementation uses hard-coded values, a more elegant solution could involve leveraging datetime functions or employing configuration files such as YAML. This modification would enhance the application's flexibility and future-proof its adaptability.</p>
+							<p><a href="https://github.com/swapnilvishwakarma/Predict-Car-Price" target="_blank">Github Link</a></p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="https://www.linkedin.com/in/swapnil-vishwakarma/">LinkedIn</a></li>
+						<li><a href="https://github.com/swapnilvishwakarma">Github</a></li>
+						<li><a href="https://www.analyticsvidhya.com/blog/author/swapnil-vishwakarma/">Analytics Vidhya</a></li>
+						<li><a href="https://auth.geeksforgeeks.org/user/swapnilvishwakarma7/articles?utm_source=geeksforgeeks&utm_medium=article_author&utm_campaign=auth_user">Geeks for Geeks</a></li>
+						<li><a href="https://medium.com/@swapnil-vishwakarma">Medium</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
